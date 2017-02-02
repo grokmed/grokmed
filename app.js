@@ -17,7 +17,7 @@ app.post('/search', function(req, res) {
 	resultArray = getProviderList(req.body.cpt, req.body.insurance, req.body.zipcode);
 	res.render('results', {
 		results: resultArray
-	});	
+	});
 });
 
 
@@ -97,9 +97,9 @@ function getProviderList(cpt, insurance, zipcode) {
 //     console.log(info.data);
 //   }
 // }
- 
+
 // request(options, callback);
-	
+
 var server = app.listen(3000, function() {
 	console.log('Listening on port 3000');
 });
